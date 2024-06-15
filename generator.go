@@ -12,10 +12,14 @@ var Data = genmain.Overlay(
 	genmain.Data{
 		Module: "github.com/diamondburned/gotk4-gnome-desktop/pkg",
 		Packages: []genmain.Package{
-			{Name: "gnome-desktop-4", Namespaces: []string{"GnomeDesktop-4"}},
+			{Name: "gnome-desktop-4"},
 			{Name: "gnome-desktop-3.0", Namespaces: []string{"GnomeDesktop-3"}},
 		},
-		PkgGenerated: []string{"gnomedesktop"},
+		PkgGenerated: []string{
+			"gnomedesktop",
+			"gnomerr",
+			"gnomebg",
+		},
 		PkgExceptions: []string{
 			"go.mod",
 			"go.sum",
